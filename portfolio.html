@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">  
+    
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -169,52 +171,70 @@
         </section>
     </main>
 
-<footer class="footer ">
-    <div class="container footer-container">
-        <div>
-            <a href="./index.html" class="logo footer__logo"><span class="logo__decoration"> Web</span><span
-                    class="logo-studio">Studio</span> </a>
-            <address class="address-list">
-                <ul class="list footer-list">
-                    <li class="address-item"><a href="" class="link address-link"> м. Київ, пр-т Лесі Українки, 26</a>
-                    </li>
-                    <li class="address-item"><a href="mailto:info@devstudio.com"
-                            class="link address-link address-contacts">info@devstudio.com</a></li>
-                    <li class="address-item"><a href="tel:+380961111111" class="link address-link address-contacts">+38
-                            096 111 11 11</a></li>
-                </ul>
-
-            </address>
+    <footer class="footer ">
+        <div class="container footer-container">
+            <div class="footer-contacts-container">
+                <div>
+                    <a href="./index.html" class=" logo footer__logo"><span class="logo__decoration"> Web</span><span
+                            class="footer__logo--inverse">Studio</span> </a>
+                    <address class="address-list">
+                        <ul class="list footer-list">
+                            <li class="address-item"><a href="" class="link address-link"> м. Київ, пр-т Лесі Українки,
+                                    26</a></li>
+                            <li class="address-item"><a href="mailto:info@devstudio.com"
+                                    class="link address-link address-contacts">info@devstudio.com</a></li>
+                            <li class="address-item"><a href="tel:+380961111111"
+                                    class="link address-link address-contacts">+38 096 111 11 11</a></li>
+                        </ul>
+    
+                    </address>
+                </div>
+    
+                <div>
+                    <p class="footer__text">приєднуйтесь</p>
+                    <ul class="list socials">
+                        <li>
+                            <a class="socials__link socials__link-footer link" href="" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Instagram icon"> <svg
+                                    class="icon-instagram socials__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                                </svg></a>
+                        </li>
+                        <li><a class="socials__link socials__link-footer link" href="" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Twitter icon"><svg
+                                    class="icon-twitter socials__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter-2"></use>
+                                </svg></a></li>
+                        <li><a class="socials__link socials__link-footer link" href="" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Facebook icon"><svg
+                                    class="icon-facebook socials__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook-3"></use>
+                                </svg></a></li>
+                        <li><a class="socials__link socials__link-footer link" href="" target="_blank"
+                                rel="nofollow noopener noreferrer" aria-label="Linkedin icon"><svg
+                                    class="icon-facebook socials__icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin-4"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-subscribe-container">
+                <strong class="subscribe__text">Підпишіться на розсилку</strong>
+                <form class="subscribe__form" name="subscribe">
+    
+                    <input class="subscribe__field" type="email" name="footer-email" id="footer-email" placeholder="Email"
+                        required>
+                    <button type="submit" class="subscribe__btn">
+                        Підписатися
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-tg"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-
-        <div>
-            <p class="footer-socials">приєднуйтесь</p>
-            <ul class="list socials-list">
-                <li>
-                    <a class="socials-link-footer link" href="" target="_blank" rel="nofollow noopener noreferrer"
-                        aria-label="Instagram icon"> <svg class="icon-instagram socials-footer-icon" width="20"
-                            height="20">
-                            <use href="./images/icons.svg#icon-instagram-1"></use>
-                        </svg></a>
-                </li>
-                <li><a class="socials-link-footer link" href="" target="_blank" rel="nofollow noopener noreferrer"
-                        aria-label="Twitter icon"><svg class="icon-twitter socials-footer-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter-2"></use>
-                        </svg></a></li>
-                <li><a class="socials-link-footer link" href="" target="_blank" rel="nofollow noopener noreferrer"
-                        aria-label="Facebook icon"><svg class="icon-facebook socials-footer-icon" width="20"
-                            height="20">
-                            <use href="./images/icons.svg#icon-facebook-3"></use>
-                        </svg></a></li>
-                <li><a class="socials-link-footer link" href="" target="_blank" rel="nofollow noopener noreferrer"
-                        aria-label="Linkedin icon"><svg class="icon-facebook socials-footer-icon" width="20"
-                            height="20">
-                            <use href="./images/icons.svg#icon-linkedin-4"></use>
-                        </svg></a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+    
+    </footer>
 
 
     
