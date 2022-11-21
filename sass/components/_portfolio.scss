@@ -1,8 +1,4 @@
-/************************
-   **PORTFOLIO-PAGE* 
-/************************     
- */
-.filter-btn {
+.portfolio__btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -12,60 +8,76 @@
     border-radius: 4px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);      
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
-.filter-btn:not(last-child){
-margin-right: 8px;
-}   
+
+.buttons-item:not(last-child) {
+    margin-right: 8px;
+}
+
 .buttons-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px ;  
+    margin-bottom: 50px;
 }
-.portfolio-list {
+
+.portfolio__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.projects-list-title {
+
+.portfolio__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;      
+    letter-spacing: 0.06em;
 }
-.projects-list-descr {
+
+.portfolio__text {
     font-size: 16px;
-    line-height: 1.88;   
+    line-height: 1.88;
     color: var(--main-text-color);
 }
-.portfolio-border {
+
+.portfolio__name {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
-}      
-.portfolio-list-link {
+}
+
+.portfolio__link {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
- .portfolio-item {
-    width: calc((100% - 60px)/3);
- /* margin-right: 30px;
-    margin-bottom: 30px; */
- } 
-.portfolio-list-link:hover,
-.portfolio-list-link:focus {
+&:hover,
+&:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-list-link:hover .portfolio-overlay,
-.portfolio-list-link:focus .portfolio-overlay {
+
+}
+
+.portfolio__item {
+    width: calc((100% - 60px)/3);
+    /* margin-right: 30px;
+    margin-bottom: 30px; */
+}
+
+
+
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
     transform: translateY(0);
 }
- .portfolio-descr-thumb {
+
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
- }
- .portfolio-overlay {
+}
+
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,11 +87,11 @@ margin-right: 8px;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(295px);
     transition: transform 250ms ease;
- }
- .portfolio-overlay-text {
+}
+
+.portfolio__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     color: var(--contrast-text-h-color);
- }
-
+}
